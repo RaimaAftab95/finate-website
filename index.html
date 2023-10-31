@@ -1,61 +1,50 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-    <!-- link bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <!-- link google fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- custom css -->
-     <link href="style.css" rel="stylesheet">
-      <!-- link fontawsome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-      <!--== Favicon ==-->
-      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Finate - Job Portal Website Using Bootstrap 5</title>
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="header header-img">
-        <div class="header-nav">
-    <nav class="p-2">
-    <ul class="sidebar">
-        <!-- li*6 short key -->
-       
-        <li><a href="#">Finate Brand logo</a></li>
-        <li class="nav-crossicon d-flex justify-content-between align-items-center">Menue    <i class="fa-solid fa-xmark m-2" onclick="hideSidebar()"></i></li>
-        <li><a href="#">Home</a></li>
-        <li> <a href="#">Find Jobs</a></li>
-        <li><a href="#">Employers Details</a></li>
-        <li><a href="#">Candidates</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    <!-- cdn fontawsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link href="style.css" rel="stylesheet">
+      <!-- link google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <!-- Header Start  class="header-img"-->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#"><img src="images/logo-light-black.webp" alt="nav logo"></a></h2>
 
-    <ul>
-        <!-- hide on small screen -->
-        <li><a href="#"><img src="images/logo-light-black.webp" alt="nav logo"></a></li>
-       
-        <li><a href="#" class="hideOnMobile">Home</a></li>
-        <li> <a href="#" class="hideOnMobile">Find Jobs</a></li>
-        <li><a href="#" class="hideOnMobile">Employers Details</a></li>
-        <li><a href="#" class="hideOnMobile">Candidates</a></li>
-        <li><a href="#" class="hideOnMobile">Blog</a></li>
-        <li><a href="#" class="hideOnMobile">Pages</a></li>
-        <li><a href="#" class="hideOnMobile">Contact</a></li>
-        <li class="nav-baricon" onclick="showSidebar()"><i class="fa-solid fa-bars m-2">bar</i></li>
-    </ul>
-</nav>
-</div>
-</div>
-</div>
+          <ul class="menu_items">
+            <!-- edit class btn-menu-close -->
+            <!-- class = "menu_toggle" hide on big screen and appear on small screen -->
+            <li class ="menu_toggle"><a href="#" class=" nav_link btn-menu-close">Menu<i class="fa-solid fa-chevron-left"></i></a></li>
+           
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a href="#" class="nav_link">Find Jobs</a></li>
+            <li><a href="#" class="nav_link">Employers Details</a></li>
+            <li><a href="#" class="nav_link">Candidates</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#" class="nav_link">Contact</a></li>
+          </ul>
+          
+          <button class="btn-registration"> <span>+</span>Registration</button>
+          <button class="menu_toggle btn-menu"> <i class="fa-solid fa-bars"></i></button>
+         
+        </nav>
+      </header>
+      <div class="header-img container-fluid">
+        </div>
+      </div>
+   
+    </main>
 
-    <!-- custom js -->
     <script src="script.js"></script>
-     <!-- bootstrap js -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
