@@ -12,39 +12,56 @@
     <link href="style.css" rel="stylesheet">
       <!-- link google fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- link bootstrap  css -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
     <main>
       <!-- Header Start  class="header-img"-->
       <header>
-        <nav class="nav container">
+        <nav class="nav nav-area">
           <h2 class="nav_logo"><a href="#"><img src="images/logo-light-black.webp" alt="nav logo"></a></h2>
 
           <ul class="menu_items">
             <!-- edit class btn-menu-close -->
             <!-- class = "menu_toggle" hide on big screen and appear on small screen -->
-            <li class ="menu_toggle"><a href="#" class=" nav_link btn-menu-close">Menu<i class="fa-solid fa-chevron-left"></i></a></li>
+            <li class ="menu_toggle"><a href="#" class="btn-menu-close">Menu<i class="fa-solid fa-chevron-left"></i></a></li>
            
-            <li><a href="#" class="nav_link">Home</a></li>
-            <li><a href="#" class="nav_link">Find Jobs</a></li>
-            <li><a href="#" class="nav_link">Employers Details</a></li>
-            <li><a href="#" class="nav_link">Candidates</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#" class="nav_link">Contact</a></li>
+            <li class="nav_link"><a href="#" >Home</a></li>
+            <li class="nav_link"><a href="#" >Find Jobs</a></li>
+            <li class="nav_link"><a href="#" >Employers Details</a></li>
+            <li class="nav_link"><a href="#" >Candidates</a></li>
+            <li class="nav_link"><a href="#"  >Blog</a></li>
+            <li class="nav_link"><a href="#"  >Pages</a></li>
+            <li class="nav_link"><a href="#" >Contact</a></li>
           </ul>
-          
+          <div class="header-btnplus-menue d-flex">
           <button class="btn-registration"> <span>+</span>Registration</button>
           <button class="menu_toggle btn-menu"> <i class="fa-solid fa-bars"></i></button>
-         
+          </div>
         </nav>
       </header>
       <div class="header-img container-fluid">
+       <div class="row  justify-content-center text-center pt-5 pb-3" id="header-content">
+          <div class="col-lg-8 col-md-8 col-12 p-5" >
+            <h1 class="mb-3 title slider-content"><span>2,568 </span>job available
+              <br>
+              You can choose your dream job
+            </h1>
+            <p class="mb-5 text-white">Find great job for build your bright career. Have many job in this plactform.
+            </p>
+
+    </div>
+
+
+
         </div>
       </div>
    
     </main>
+<!-- ======================BOOTSTRAP JAVASCRIPT LINK================================ -->
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
