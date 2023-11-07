@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 body{
-    
     min-height: 100vh;
     color: #656565;
     font-size: 16px;
@@ -24,16 +23,17 @@ body{
 main {
   background:white;
 }
+/* header change */
+.nav-area{
 
-header{
-
-    background-color: transparent;
+    background-color: transparent!important;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
      z-index: 1000;
      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+     margin: 0 auto;
 }
 .header-img
 {
@@ -44,19 +44,20 @@ header{
     width:1600px;
     height:870px;
 }
-.nav-area {
+/* .nav-area {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-}
+} */
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 60px;
 }
+/* navlogo padding */
 .nav_logo {
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 .menu_items {
   display: flex;
@@ -68,11 +69,22 @@ a {
   text-decoration: none!important;
 }
 
+
+
 /* to give blur effect on back page when side nav appear */
-body.menu-open {
+ /* body.menu-open {
   filter: blur(5px);
   transition: filter 0.5s; 
-}
+} */
+/* .blur-container {
+  filter: blur(5px); 
+  transition: filter 0.5s;
+} */
+/* *************to save navigation menue from blur */
+/* Remove the blur effect for elements with the "not-blur" class */
+/* .not-blur {
+  filter: none; 
+} */
 
 .menu_toggle {
   display: none;
@@ -105,8 +117,8 @@ ul li a:hover
   border: none;
   border-radius: 5px;
   display: none;
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
   font-size: 20px;
   margin-left: 8px;
   position: relative;
@@ -114,32 +126,39 @@ ul li a:hover
   height: 38px;
   width: 38px;
   line-height: 38px;
+  
 }
-
-
-
 
 /* ###########  small screen nav bar  ############# */
 /* Reponsive */
-/* @media (width < 860px)*/ 
 @media(width<1025px)
 { 
 /* decrease font size for small screen */
   body{
     font-size:13px!important;
   }
-  header .btn-registration .btn-menu{
+  /* header change */
+ /* .nav-area,*/
+  .btn-registration
+   {
     font-size: 13px!important;
     height: 34px!important;
     width: 102px!important;
     line-height: 32px;
-}
+} 
+.btn-menu 
+   {
+    font-size: 13px!important;
+    height: 34px!important;
+    width: 34px!important;
+    line-height: 32px;
+} 
+
   .menu_toggle {
     display: block;
   }
   .nav {
     padding: 0 20px;
-    /* background-color: #fff; */
     background-color: transparent!important;
   }
 
@@ -161,12 +180,9 @@ ul li:first-child a:hover
   color: #fff;
   text-transform: uppercase;
 }
-
-header
-
-{
-  background-color: transparent!important;
-}
+/* change header*/
+.nav-area
+{background-color: transparent!important;}
 
 /* side bar with white colortoggle  */
   .menu_items {
@@ -190,6 +206,8 @@ header
   
 .showMenu .menu_items {
     left: 0!important;
+    /* to not apply blur effect on menu bar */
+    filter: none;
   }
 
   a {
@@ -208,15 +226,44 @@ header
   .menu_toggle i{
     width: 20px;
     cursor: pointer;
-   
   }
+  /* on small screen header btn */
+  .headerbtn,.headerbtnsearch
+  {
+    width: 100% !important;;
+    height:54px;
+  }
+  .header-text
+  {
+    font-size: 14px!important;
+  }
+  .header-title
+  {
+    font-size: 26px!important;
+  }
+
+/* hide animated images */
+
+.img1,.img2,.img3,.img4{
+  display: none;
 }
 
+/* cards applynow btn on small screen */
+.apply-btn{
+  /* 38px */
+  /* height: 38px!important; */
+  /* 5px */
+  /* padding: 4px 5px 6px!important; */
+  /* width:90px!important; */
+  /* 15px */
+  font-size: 10px!important;
+ }
 
+}
 
 /* header content area start */
 
-.header-content
+/* .header-content
 {
   color: #fff;
 
@@ -231,4 +278,331 @@ header
   font-size: 50px;
   line-height: 1.3;
   margin-bottom: 21px;
+} */
+/* #header-content
+{
+  margin: 23px 0px 34px;
+} */
+/* .home-slider-container .slider-content-area .slider-content {
+  margin-bottom: 34px;
+  margin-top: 23px!important;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+} */
+.header4btn
+{
+  margin-bottom: 34px!important;
+  margin-top: 23px!important;
+  text-align: center;
 }
+
+.headerbtn{
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    color: #656565;
+    line-height: 68px;
+    font-size: 15px;
+    width: 300px;
+    height: 68px;
+    outline: none;
+    margin: 0;
+    padding: 1px 46px 0 32px;
+  
+}
+.headerbtnsearch{
+  width: 68px;
+  height: 68px;
+  background-color: #03a84e!important;
+  color: #fff!important;
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  line-height: 68px;
+  font-size: 15px;
+  outline: none;
+  margin: 0!important;
+  padding: 1px 46px 0 32px!important;
+}
+.header-title{
+  color: #fefefe;
+  font-size: 50px;
+  line-height: 1.3;
+  margin-bottom: 21px;
+}
+.header-title span{
+  color: #03a84e;
+}
+.header-text{
+  font-size: 18px;
+  color: #fefefe;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
+
+
+
+/********* video player btn********* */
+ /*left:0;
+  top:0;*/ 
+.play-video-btn .video-popup:before {
+  background-color: #03a84e;
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+}
+.play-video-btn {
+  position: absolute;
+  top:85%; /* Vertically center the play button */
+  left:50%; /* Horizontally center the play button */
+  transform: translate(-50%, -50%); /* Center it both vertically and horizontally */
+  z-index:2;
+  /* Place it above the background image */
+}
+
+.play-video-btn a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Make the anchor element a positioning context */
+  width: 76px; 
+  height: 76px;
+  background-color: #fff; /* Adjust the background color as needed */
+  border-radius: 50%; /* Make it a circle */
+  z-index: 1; /* Place it above the ::before element */
+  text-decoration: none; /* Remove underline from the anchor element */
+}
+
+
+/* *************header animated pics */
+   
+    @keyframes moveUpDown{
+    0% {
+        transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+   
+       
+     
+@keyframes scaleUpDown {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+ 
+@keyframes movebounce2
+{
+  0% {
+    transform: translateX(0px);
+    transform: translateX(0px);
+}
+50% {
+    transform: translateX(60px);
+    transform: translateX(60px);
+}
+100% {
+    transform: translateX(0px);
+    transform: translateX(0px);
+}
+}
+
+
+@keyframes movebounce{
+0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+50% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+}
+
+.home-slider-shape .img1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.img1
+{animation: movebounce 4s linear infinite;}
+
+    .home-slider-shape .img2 {
+        position: absolute;
+        top: 0;
+        right: 0;   
+    }
+
+.img2
+{
+    animation: movebounce2 5s linear infinite;
+}
+    .home-slider-shape .img3 {
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+    }
+    .img3 {
+      animation: moveUpDown 4s ease-in-out infinite;
+    }
+
+    .home-slider-shape .img4 {
+        position: absolute;
+        bottom: 250px;
+        right: 48px;
+    }
+    .img4 {
+      animation: scaleUpDown 3s ease-in-out infinite;
+    }
+
+    /* ************ section1 start**************** */
+    /* *******popular category  */
+    .heading-black{
+     font-size: 30px;
+     margin-bottom: 12px;
+     color: #272a33;
+    font-family: "Jost", sans-serif;
+    font-weight: 650!important;
+    line-height: 1.2;
+    margin-top: 12px;
+}
+/* 
+    .text-black{
+      body {
+        color: #656565;
+        font-size: 16px;
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        line-height: 1.75;
+        margin: 0;
+        overflow-x: hidden;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+    } */
+
+    .bg-color-lightgray
+    {background-color: #f4f7f7;
+    }
+    
+    .bg-color-lightgray:hover
+    { background-color: #03a84e;
+    color: #fefefe;}
+
+    /* ************ section#2 staRT*********** */
+    /* RECENT JOB CIRCULARS */
+
+    .section2-bg
+    {
+      background-color: #f4f7f7;
+    }
+
+    .card-img
+    {
+      width: 74px!important;
+      height: 74px!important;
+      border-radius: 5px!important;
+    }
+.cards-small-black-heading   
+    { color: #272A33;
+      font-size:20px;
+      font-weight:600;
+     }
+
+     .cards-small-black-heading:hover
+     {
+      color: #03A84e;
+     }
+
+     .card-graysmalltext
+     {font-size: 15px;
+      color: #656565;
+    }
+    .card-big-black-heading
+    { color: #272A33;
+      font-size:24px;
+      font-weight:600;
+     }
+
+     .card-big-black-heading:hover
+     {
+      color: #03A84e;
+     }
+
+     .card-fulltime
+     {
+      font-size: 16px;
+      color: #03A84e;
+      font-weight: 500;
+     }
+     .card-amaount
+     {
+      font-size: 22px;
+      color: #272A33;
+     }
+     .card-permonth
+     {
+      font-size: 14px;
+      color: #656565;
+      /* margin-right: 30px; */
+     }
+     .remote
+     { 
+      font-size: 16px;
+      color: #0054FF;
+      font-weight: 500;
+     }
+     .part-time
+     {
+      font-size:16px;
+      color: #FF7E00;
+      font-weight: 500;
+     }
+     .apply-btn{
+      height:38px!important;
+      padding: 4px 5px 6px 5px!important;
+      width:90px!important;
+      background-color: #03a84e!important;
+      border: 1px solid #03a84e!important;
+      border-radius: 5px!important;
+      color: #fff;
+      /* display: inline-block; */
+      display: inline-flex; /* Use flexbox to center content */
+      align-items: center; /* Vertically center text */
+      justify-content: center; /* Horizontally center text */
+
+      font-size: 15px!important;
+     }
+
+     .apply-btn:hover
+     {
+      background-color: #f4f7f7!important;
+      color: #03a84e!important;
+     }
