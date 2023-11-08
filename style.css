@@ -14,7 +14,7 @@ body{
     font-family: "Jost", sans-serif;
     font-weight: 400;
     line-height: 1.75;
-    margin: 0;
+    margin:0;
     overflow-x: hidden;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -44,11 +44,7 @@ main {
     width:1600px;
     height:870px;
 }
-/* .nav-area {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-} */
+
 .nav {
   display: flex;
   align-items: center;
@@ -68,23 +64,6 @@ a {
   color: #fff!important;
   text-decoration: none!important;
 }
-
-
-
-/* to give blur effect on back page when side nav appear */
- /* body.menu-open {
-  filter: blur(5px);
-  transition: filter 0.5s; 
-} */
-/* .blur-container {
-  filter: blur(5px); 
-  transition: filter 0.5s;
-} */
-/* *************to save navigation menue from blur */
-/* Remove the blur effect for elements with the "not-blur" class */
-/* .not-blur {
-  filter: none; 
-} */
 
 .menu_toggle {
   display: none;
@@ -250,16 +229,18 @@ ul li:first-child a:hover
 
 /* cards applynow btn on small screen */
 .apply-btn{
-  /* 38px */
-  /* height: 38px!important; */
-  /* 5px */
-  /* padding: 4px 5px 6px!important; */
-  /* width:90px!important; */
-  /* 15px */
-  font-size: 10px!important;
+  
+   font-size: 10px!important;
+  padding:2px;
  }
 
+ .play-video-btn
+ {
+  top: 79% !important;
 }
+
+}
+
 
 .header4btn
 {
@@ -318,8 +299,7 @@ ul li:first-child a:hover
 
 
 /********* video player btn********* */
- /*left:0;
-  top:0;*/ 
+ 
 .play-video-btn .video-popup:before {
   background-color: #03a84e;
   border-radius: 50%;
@@ -331,9 +311,8 @@ ul li:first-child a:hover
 }
 .play-video-btn {
   position: absolute;
-  top:85%; /* Vertically center the play button */
-  left:50%; /* Horizontally center the play button */
-  transform: translate(-50%, -50%); /* Center it both vertically and horizontally */
+  top:77%; 
+  left:50%; 
   z-index:2;
   /* Place it above the background image */
 }
@@ -342,13 +321,13 @@ ul li:first-child a:hover
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Make the anchor element a positioning context */
+  position: relative; 
   width: 76px; 
   height: 76px;
-  background-color: #fff; /* Adjust the background color as needed */
-  border-radius: 50%; /* Make it a circle */
-  z-index: 1; /* Place it above the ::before element */
-  text-decoration: none; /* Remove underline from the anchor element */
+  background-color: #fff; 
+  border-radius:50%; 
+  z-index: 1; 
+  text-decoration: none; 
 }
 
 
@@ -465,6 +444,7 @@ ul li:first-child a:hover
     margin-top: 12px;
 }
 
+
     .bg-color-lightgray
     {background-color: #f4f7f7;
     }
@@ -522,13 +502,14 @@ ul li:first-child a:hover
      .card-amaount
      {
       font-size: 22px;
-      color: #272A33;
+      color:#272A33;
+      font-weight: 600;
      }
      .card-permonth
      {
       font-size: 14px;
       color: #656565;
-      /* margin-right: 30px; */
+     
      }
      .remote
      { 
@@ -551,9 +532,9 @@ ul li:first-child a:hover
       border-radius: 5px!important;
       color: #fff;
       /* display: inline-block; */
-      display: inline-flex; /* Use flexbox to center content */
-      align-items: center; /* Vertically center text */
-      justify-content: center; /* Horizontally center text */
+      display: inline-flex; 
+      align-items: center;
+      justify-content: center;
 
       font-size: 15px!important;
      }
@@ -563,3 +544,57 @@ ul li:first-child a:hover
       background-color: #f4f7f7!important;
       color: #03a84e!important;
      }
+
+
+     /* ***************section3****************/
+  .innerimgbox
+  {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 70px;
+    height: 70px;
+    /* background-color: #f4f7f7; */
+    background-color: #e8efef;
+    text-align: center!important;
+  }
+  .outerimgbox
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border:2px dashed #e8efef;;
+  border-radius: 5px;
+}
+
+.outerimgbox:hover{
+
+border: 2px dashed green;
+}
+.outerimgbox:hover .innerimgbox
+{
+  background-color: #03A84e;
+  /* content: url('images/w1-hover.webp'); */
+  /* to change image on hover */
+}
+
+
+.green i
+{
+  color: #03a84e;
+
+}
+.green i:hover {
+  color:#f4f7f7;
+}
+
+.arrow i {
+  color: #03a84e;
+  opacity: 0.2; 
+  transition: opacity 0.3s;
+}
+.arrow i:hover {
+  opacity: 1; 
+}
