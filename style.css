@@ -239,6 +239,26 @@ ul li:first-child a:hover
   top: 79% !important;
 }
 
+/* .play-video-btn
+ {
+  top:110%!important;
+  left: 40%!important;
+  width:40%!important; 
+  height:40% !important;
+} */
+
+ .section4-subtitle {
+  font-size:15px!important;
+}
+.section4-title {
+  font-size: 25px!important;
+}
+
+.icon{
+  width:130px!important;
+  height: 41px!important;
+}
+
 }
 
 
