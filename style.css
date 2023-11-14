@@ -991,3 +991,19 @@ footer {
 {
   color: #fff;
 }
+/* scroll to top */
+.green-arrow{
+  right:0;
+  bottom:1%;
+  position:fixed;
+ 
+}
+
+ .green-arrow i{
+  color:#03A84e;
+  font-size:40px ;
+}
+.green-arrow i:hover{
+  color:#e8efef;
+  font-size:40px ;
+}
