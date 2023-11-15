@@ -7,6 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
     min-height: 100vh;
     color: #656565;
@@ -259,6 +264,34 @@ ul li:first-child a:hover
   height: 41px!important; 
 }
 
+
+.sec9-title
+{font-size:25px!important;
+}
+
+/* |
+.subscribe-btn{
+  width:110px!important;
+  height:20px!important;
+  font-size:13px!important;
+}
+.sec9-inputbtn{
+  width: 453px!important;
+  height: 55px!important;
+  font-size: 22px!important;
+} */
+
+/* .copyright{
+  font-size: 13px;
+} */
+
+/*it appear on left on small screen to sort  */
+.green-arrow{
+  right:1% !important;
+  bottom:1%;
+  position:fixed;
+  left: auto !important; 
+}
 }
 
 
@@ -927,6 +960,7 @@ margin-top: 0;
 /* footer */
 footer {
   background-color: #272a33;
+  position: relative;
   /* text-align: center; */
 }
 .footer-text {
@@ -943,23 +977,31 @@ footer {
 }
 .footor-icon i
 {
-    border: 2px solid #e3e8f1;
+    border: 2px solid #e3e8f1!important;
     border-radius: 50%;
-    color: #fff;
+    color: #e8efef;
     font-size: 14px;
     display: inline-block;
     height: 50px;
     width: 50px;
     text-align: center;
     line-height: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
 }
 
-.footor-icon i:hover
+/* .footor-icon i:hover
 {
    color: #fff ;
   border: #fff;
   background-color: #03A84e;
+} */
+.footor-icon i:hover
+{
+  border: 2px solid #03A84e!important;
+  background-color: #03A84e;
 }
+
 .footer-list ul {
   list-style: none;
   padding: 0!important;
@@ -983,9 +1025,12 @@ footer {
 {
   color: #03A84e;
 }
+
 .codefooter
 {
   color: #03A84e;
+  margin: 0!important;
+  padding: 0!important;
 }
 .codefooter:hover
 {
@@ -996,12 +1041,18 @@ footer {
   right:0;
   bottom:1%;
   position:fixed;
+  /* display: none!important; */
+
+  /* @media (min-height:1025px) 
+  {
+    display: block!important; 
+  } */
  
 }
 
  .green-arrow i{
   color:#03A84e;
-  font-size:40px;
+  font-size:40px ;
   transition: all 0.3s ease;
 }
 .green-arrow i:hover{
@@ -1009,7 +1060,6 @@ footer {
   font-size:40px ;
   animation: bounce 0.5s infinite;
 }
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0); /* Keep it at the original position */
