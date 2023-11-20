@@ -1317,3 +1317,22 @@ footer {
   background-color: #f4f7f7!important;
   padding: 36px 35px 36px;
 }
+
+
+.social-icons a i {
+  background-color: transparent;
+  border: 1px solid #dfe2e7;
+  border-radius: 5px;
+  color: #05103b;
+  height: 45px;
+  font-size: 13px;
+  width: 45px;
+  text-align: center;
+  line-height: 43px;
+}
+
+.social-icons a i:hover
+{
+  background-color: #03A84e;
+  color: #fff;
+}
