@@ -1247,6 +1247,18 @@ footer {
   width: 100px;
 }
 
+/* on hover number boxes */
+.employers-counterbox:hover .employers-counternumber,
+.employers-counterbox:hover .employers-counter-title {
+  color: white!important;
+}
+
+.employers-counterbox:hover 
+{
+  background-color:#03A84e!important;
+  color: white!important;
+}
+
 .employers-about-title {
   font-size: 30px;
   margin-bottom: 22px;
