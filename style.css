@@ -269,6 +269,14 @@ ul li:first-child a:hover
   font-size:16px!important;
 }
 
+/* contact us page */
+
+.contact-headertitle
+{
+    font-size: 32px!important; 
+}
+
+
 }
 
 .header4btn
@@ -1278,13 +1286,28 @@ footer {
   background-color: #f4f7f7!important;
   margin-bottom: 0;
 }
-
-.dotted
+ .dotted
  {
   min-width: 4px;
   padding-right: 28px;
+  padding-bottom: 15px;
  }
+ .table-name {
+color:#272a33!important;
+font-weight: 550!important;
+ min-width: 136px;
+ padding-bottom: 15px;
+}
+.table-info
+{ color: #656565!important;
+  font-size: 15px!important;
+  padding-bottom: 15px;
+}
 
+.employers-rating {
+  color: #ff9600;
+  font-size: 13px;
+}
  .employes-card-bgcolor {
   background-color: #f4f7f7!important;
   padding: 36px 35px 36px;
