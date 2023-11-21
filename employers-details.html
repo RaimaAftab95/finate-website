@@ -319,7 +319,7 @@
 <!-- information wrapper -->
 <div class="employers-info-wrap mb-5">
    
-    <h4 class="card-amaount  pb-3">Information</h4>
+    <h4 class="employers-about-title  pb-3">Information</h4>
     <div class="greenline"></div>
     <div class=" mb-5"></div>
     <table class="employers-table">
@@ -397,16 +397,16 @@
 
 <!-- share with wraper  -->
 <div class="employers-info-wrap mb-5">
-  <h3 class="card-amaount  pb-3">Share With</h3>
+  <h3 class="employers-about-title  pb-3">Share With</h3>
     <div class="greenline"></div>
     <div class=" mb-5"></div>
     <div class=" text-center">
     <div class="social-icons">
       <a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://www.skype.com" target="_blank" rel="noopener"><i class="fa-brands fa-skype"></i></a>
+      <a href="https://twitter.com" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.skype.com" target="_blank" ><i class="fa-brands fa-skype"></i></a>
       <a href="https://www.pinterest.com" target="_blank" rel="noopener"><i class="fa-brands fa-pinterest"></i></a>
-      <a href="https://dribbble.com/" target="_blank" rel="noopener"><i class="fa-brands fa-dribbble"></i></a>
+      <a href="https://dribbble.com/" target="_blank" ><i class="fa-brands fa-dribbble"></i></a>
     </div>
   </div>
   </div>
@@ -420,22 +420,19 @@
 
 <!-- contact now wraper -->
 <div class="employers-info-wrap mb-5 ">
-  <h3 class="card-amaount  pb-3">Contact Now</h3>
+  <h3 class="employers-about-title pb-3">Contact Now</h3>
     <div class="greenline mb-3"></div>
     <div class=" mb-5"></div>
     <!-- remove p-5 from form class -->
     <form class="">
       <div class="mb-3">
-        <input type="text" class="form-control contact-inputfields" id="contact-form-name" placeholder="Name:">
+        <input type="text" class="form-control contact-inputfields" id="contact-form-name" placeholder="Name:" required autocomplete="off">
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control contact-inputfields" id="contact-form-email" placeholder="Email:">
+        <input type="email" class="form-control contact-inputfields" id="contact-form-email" placeholder="Email:" required autocomplete="off">
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control contact-inputfields" id="contact-form-email" placeholder="Subject:">
-      </div>
-      <div class="mb-3">
-        <textarea class="form-control contact-messsage-area" id="contact-form-message" placeholder="Message" rows="3"></textarea>
+        <textarea type="text" class="form-control contact-messsage-area" id="contact-form-message" placeholder="Message" required autocomplete="off"></textarea>
       </div>
       <button type="submit" class="btn contact-send-message">Send Message</button>
     </form>
