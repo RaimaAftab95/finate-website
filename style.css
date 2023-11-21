@@ -511,6 +511,9 @@ padding: 1px 46px 0 32px;
     {
       background-color: #f4f7f7;
     }
+    .card-bg{
+      padding: 36px 35px 36px;
+    }
 
     .card-img
     {
@@ -1110,6 +1113,7 @@ footer {
    background-color: #f4f7f7!important;
    border-radius: 5px;
    padding: 65px 71px 69px;
+   position: relative;
  }
 
   .greenline{
@@ -1283,7 +1287,6 @@ footer {
 }
 .employers-table
 { background-color: transparent!important;
-  background-color: #f4f7f7!important;
   margin-bottom: 0;
 }
  .dotted
