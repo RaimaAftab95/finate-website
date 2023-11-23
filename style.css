@@ -27,7 +27,6 @@ body{
 main {
   background:white;
 }
-/* header change */
 .nav-area{
 
 background-color: transparent!important;
@@ -110,20 +109,17 @@ line-height: 47px;
   top: 1px;
   height: 38px;
   width: 38px;
-  line-height: 38px;
-  
+  line-height: 38px; 
 }
 
-/* ###########  small screen nav bar  ############# */
-/* Reponsive */
+/*****  small screen  Reponsiveness  *****/
 @media(width<1025px)
 { 
 /* decrease font size for small screen */
   body{
     font-size:13px!important;
   }
-  /* header change */
- /* .nav-area,*/
+  
   .btn-registration
    {
     font-size: 13px!important;
@@ -165,7 +161,6 @@ ul li:first-child a:hover
   color: #fff;
   text-transform: uppercase;
 }
-/* change header*/
 .nav-area
 {background-color: transparent!important;}
 
@@ -396,7 +391,7 @@ padding: 1px 46px 0 32px;
   animation: buzzing 1s infinite;
 }
 
-/* *************header animated pics */
+/* *************header animated pics **********/
    
     @keyframes moveUpDown{
     0% {
@@ -758,15 +753,20 @@ border: 2px dashed green;
   display: none; 
 } 
 
-.bookmark:hover i.fa-regular.fa-bookmark {
+.team-item:hover .bookmark i.fa-regular.fa-bookmark {
   display: none; 
 }
 
-.bookmark:hover i.fa-solid.fa-bookmark {
+.team-item:hover  .bookmark i.fa-solid.fa-bookmark {
   display: inline-block!important; 
  /* Display solid bookmark icon on hover */
 }
 
+.team-item:hover:hover
+{
+  background-color:#fff!important;
+  border: 3px solid #f4f7f7!important;
+}
 .star
  {
   color: #ff9600;
