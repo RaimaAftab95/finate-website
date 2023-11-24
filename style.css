@@ -1,7 +1,6 @@
 /* https://fonts.google.com/specimen/Jost  regular 400 standard */
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +33,9 @@ position: fixed;
 left: 0;
 top: 0;
 width: 100%;
-z-index: 1000;
+/* z-index: 1000; */
+ /* to add blur bg */
+ z-index: 1100;
 border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 margin: 0 auto;
 }
@@ -62,6 +63,8 @@ padding: 10px 20px;
   display: flex;
   list-style: none!important;
   gap: 20px;
+  /* to add blur bg */
+ z-index: 1100;
 }
 .menu_items a {
 color: #fff!important;
@@ -186,8 +189,6 @@ ul li:first-child a:hover
   
 .showMenu .menu_items {
     left: 0!important;
-    /* to not apply blur effect on menu bar */
-    filter: none;
   }
 
   .menu_items a {
@@ -411,10 +412,10 @@ padding: 1px 46px 0 32px;
 {
 0% {
   transform: scale(0.8);
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  transform: scale(0.8);
+  transform: scale(0.8);
+  transform: scale(0.8);
   opacity: 1;
 }
 100% {
@@ -1384,4 +1385,29 @@ font-weight: 550!important;
 {
   background-color: #03A84e;
   color: #fff;
+}
+
+/* adding blur bg on side menu-nav*/
+.shadowDivStyle {
+  position: absolute;
+  top: 0;
+  background-color: #2B2B2BEB;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+/* to fixed height and diable scroll on blur bg */
+.removeScrollBar {
+  overflow: hidden;
+  height: 100%;
+}
+
+.addScrollBar {
+  overflow: auto;
+  height: auto;
+}
+
+.removeScrollBar, .addScrollBar {
+  position: fixed;
+  width: 100%;
 }
