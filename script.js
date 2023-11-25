@@ -15,7 +15,7 @@ menuToggler.forEach(toggler => {
 
     //create or destroy element
     if (document.getElementById("shadowDiv") === null) {
-      var shadow = document.createElement("div");
+      let shadow = document.createElement("div");
       shadow.setAttribute("id", "shadowDiv");
       shadow.classList.add("shadowDivStyle");
       body.appendChild(shadow);
@@ -24,7 +24,7 @@ menuToggler.forEach(toggler => {
       body.classList.add("removeScrollBar");
     }
     else {
-      var shadow = document.getElementById("shadowDiv");
+      let shadow = document.getElementById("shadowDiv");
       body.removeChild(shadow);
       body.classList.remove("removeScrollBar");
       body.classList.add("addScrollBar");
