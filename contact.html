@@ -160,16 +160,16 @@
   <form class="px-5" id="contact-form">
 
     <div class="mb-3 mt-5">
-      <input type="text" class="form-control contact-inputfields" id="contact-form-name" placeholder="Name:" required autocomplete="off">
+      <input type="text" class="form-control contact-inputfields" id="contact-form-name" placeholder="Name:" required minlength="3">
     </div>
     <div class="mb-3">
-      <input type="email" class="form-control contact-inputfields" id="contact-form-email" placeholder="Email:" required autocomplete="off">
+      <input type="email" class="form-control contact-inputfields" id="contact-form-email" placeholder="Email:" required minlength="12">
     </div>
     <div class="mb-3">
-      <input type="text" class="form-control contact-inputfields" id="contact-form-subject" placeholder="Subject:" required autocomplete="off">
+      <input type="text" class="form-control contact-inputfields" id="contact-form-subject" placeholder="Subject:" required minlength="4">
     </div>
     <div class="mb-3">
-      <textarea type="textarea" class="form-control contact-messsage-area" id="contact-form-message" placeholder="Message" required autocomplete="off"></textarea>
+      <textarea type="textarea" class="form-control contact-messsage-area" id="contact-form-message" placeholder="Message" required minlength="12"></textarea>
     </div>
     <button id="contact-formbtn" type="submit" class="btn contact-send-message">Send Message</button>
   </form>

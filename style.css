@@ -167,7 +167,7 @@ ul li:first-child a:hover
 .nav-area
 {background-color: transparent!important;}
 
-/* side bar with white colortoggle  */
+/* white color toggle menu items*/
   .menu_items {
     position: fixed;
     top: 0;
@@ -1197,7 +1197,7 @@ footer {
  .contact-inputfields
  { 
  border-radius: 5px;
- color: #fff !important;
+ color:#656565 !important;
  display: inline-block;
  font-size: 15px;
  border: none;
@@ -1387,7 +1387,7 @@ font-weight: 550!important;
   color: #fff;
 }
 
-/* adding blur bg on side menu-nav*/
+/*Blurred Background for Side Menu*/
 .shadowDivStyle {
   position: absolute;
   top: 0;
