@@ -416,7 +416,6 @@ padding: 1px 46px 0 32px;
   border-radius: 0;
   box-shadow: none;
   cursor: pointer;
-  height: 44px;
   margin: 0;
   padding: 10px;
   position:fixed;
@@ -424,6 +423,7 @@ padding: 1px 46px 0 32px;
   right: 10px;
   transition: color .2s;
   width: 44px;
+  height: 44px;
   z-index: 1400;
   display: none;
 }

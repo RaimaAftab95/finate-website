@@ -7,7 +7,7 @@ const header = document.querySelector("header");
         
       // });
 
-// *********to give blur back groung on menue btn  click
+// *********to give blur background on menue btn  click
 
 
 menuToggler.forEach(toggler => {
@@ -61,17 +61,17 @@ window.addEventListener('scroll', function () {
   
  function playVideo() {
   // Get the necessary elements
-  var videoPopup = document.querySelector('.video-popup');
-  var videoIframe = document.querySelector('.video-iframe');
+  let videoPopup = document.querySelector('.video-popup');
+  let videoIframe = document.querySelector('.video-iframe');
   // var playbtn=document.querySelector('.video-popup');
   // var centervideo=document.querySelector('.center-video');
   // var videoContainer = document.querySelector('.video-container');
-  var body = document.body;
-  var closebtn=document.getElementById('closebtn');
+  let body = document.body;
+  let closebtn=document.getElementById('closebtn');
 
 
   // Create and append an overlay element
-  var overlay2 = document.createElement("div");
+  let overlay2 = document.createElement("div");
   overlay2.setAttribute("id","videoblurbg");
   overlay2.classList.add ("videobg");
   body.appendChild(overlay2);
@@ -94,10 +94,10 @@ closebtn.style.display='block';
 }
 
 function closeVideo() {
-  var videoIframe = document.querySelector('.video-iframe');
-  var overlay2 = document.getElementById('videoblurbg'); // Get the overlay element
-  var closebtn=document.getElementById('closebtn');
-  var playbtn=document.querySelector('.video-popup');
+  let videoIframe = document.querySelector('.video-iframe');
+  let overlay2 = document.getElementById('videoblurbg'); // Get the overlay element
+  let closebtn=document.getElementById('closebtn');
+  let playbtn=document.querySelector('.video-popup');
   // Hide the video iframe and overlay
   videoIframe.style.display = 'none';
   overlay2.style.display = 'none';
