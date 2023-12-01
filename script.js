@@ -56,3 +56,54 @@ window.addEventListener('scroll', function () {
     scrollToTop.style.display = 'none';
   }
 });
+
+ // iframe seting with blur bg and close btn
+  
+ function playVideo() {
+  // Get the necessary elements
+  var videoPopup = document.querySelector('.video-popup');
+  var videoIframe = document.querySelector('.video-iframe');
+  // var playbtn=document.querySelector('.video-popup');
+  // var centervideo=document.querySelector('.center-video');
+  // var videoContainer = document.querySelector('.video-container');
+  var body = document.body;
+  var closebtn=document.getElementById('closebtn');
+
+
+  // Create and append an overlay element
+  var overlay2 = document.createElement("div");
+  overlay2.setAttribute("id","videoblurbg");
+  overlay2.classList.add ("videobg");
+  body.appendChild(overlay2);
+
+
+  // Display the iframe
+   videoIframe.style.display = 'block';
+   //videoIframe.classList.add('no-animation');
+   videoPopup.style.display='none';
+// centervideo.style.display='flex';
+closebtn.style.display='block';
+
+  // Disable the click event after the video is played
+  videoPopup.onclick = function() 
+  {
+    // Revert the background blur when the video is closed
+    document.body.style.filter = 'none';
+  };
+}
+
+function closeVideo() {
+  var videoIframe = document.querySelector('.video-iframe');
+  var overlay2 = document.getElementById('videoblurbg'); // Get the overlay element
+  var closebtn=document.getElementById('closebtn');
+  var playbtn=document.querySelector('.video-popup');
+  // Hide the video iframe and overlay
+  videoIframe.style.display = 'none';
+  overlay2.style.display = 'none';
+
+  // Revert the background blur when the video is closed
+  document.body.style.filter = 'none';
+  // to hide close btn after close
+  closebtn.style.display='none';
+  playbtn.style.display='flex';
+}

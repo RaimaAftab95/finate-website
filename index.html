@@ -124,12 +124,26 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <div class="play-video-btn">
+      <!-- <div class="play-video-btn">
         <a href="https://www.youtube.com/embed/mcvqOUtcAJg?rel=0" target="_blank"
         class="video-popup">
           <img src="images/play.webp" alt="videoplayer icon">
         </a>
-      </div>
+      </div> -->
+      
+<div class="video-container">
+ <div class="play-video-btn">
+  <a href="#"  class="video-popup">
+  <img src="images/play.webp" alt="videoplayer icon"  onclick="playVideo()">
+   </a>
+       
+ <!--  add "&autoplay=1&mute=1" in src to autoplay and mute -->
+ <iframe width="560" height="315" class="video-iframe center-video" src="https://www.youtube.com/embed/mcvqOUtcAJg?si=-zhFAqy5LWKnAA-c&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+<button id="closebtn" class="fancybox-button" ><i class="fa-solid fa-xmark" onclick="closeVideo()"></i></button>  
+        </div>
+    </div>
+
     </div>
   </div>
 </div>
