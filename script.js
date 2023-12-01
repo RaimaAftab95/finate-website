@@ -75,7 +75,8 @@ window.addEventListener('scroll', function () {
   overlay2.setAttribute("id","videoblurbg");
   overlay2.classList.add ("videobg");
   body.appendChild(overlay2);
-
+// to remove scroll on video play
+body.classList.add("removeScrollBar");
 
   // Display the iframe
    videoIframe.style.display = 'block';
@@ -101,6 +102,8 @@ function closeVideo() {
   videoIframe.style.display = 'none';
   overlay2.style.display = 'none';
 
+  // to remove hidden scroll
+  body.classList.remove("removeScrollBar");
   // Revert the background blur when the video is closed
   document.body.style.filter = 'none';
   // to hide close btn after close
